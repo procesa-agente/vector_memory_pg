@@ -65,7 +65,7 @@ npm install
 
 # 2. Configurar variables de entorno
 cp .env.example .env
-# Editar .env con tu DATABASE_URL y GEMINI_API_KEY
+# Editar .env con tu DATABASE_URL y OPENAI_API_KEY
 
 # 3. Crear schema (tablas + índice HNSW)
 npm run setup
@@ -140,7 +140,7 @@ vector-memory-pg/
 │   ├── mcp-server.js  — Servidor MCP (search_memories, recent_memories, memory_stats)
 │   ├── server.js      — HTTP API en puerto 3010
 │   ├── ingest-one.js  — Ingesta incremental de un archivo
-│   ├── embeddings.js  — API de Gemini (batch de 100)
+│   ├── embeddings.js  — API de OpenAI (batch de 100)
 │   ├── chunker.js     — Troceado de sesiones JSONL y markdown
 │   ├── db.js          — PostgreSQL + pgvector (pool, queries, coseno HNSW)
 │   ├── query.js       — Búsqueda semántica

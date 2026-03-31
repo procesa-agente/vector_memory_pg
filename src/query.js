@@ -15,7 +15,7 @@ import { queryByEmbedding, getRecent } from "./db.js";
  *   → Con 7.000 chunks: ~15ms
  *
  * En nuestra versión PostgreSQL:
- *   1. Genera embedding de la query con Gemini
+ *   1. Genera embedding de la query con OpenAI
  *   2. PostgreSQL usa el índice HNSW para encontrar los vecinos más cercanos
  *   3. Devuelve top N con score de similitud
  *   → Sin importar cuántos chunks: <5ms (HNSW es sublineal)

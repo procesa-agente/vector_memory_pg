@@ -1,5 +1,5 @@
 // embeddings.js — OpenAI text-embedding-3-small
-// Reemplaza Gemini (no disponible desde Argentina)
+// Reemplaza Gemini — usamos OpenAI text-embedding-3-small (1536 dims)
 // Modelo: text-embedding-3-small, 1536 dimensiones, batch de 100
 
 const EMBEDDING_MODEL = "text-embedding-3-small";
