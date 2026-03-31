@@ -1,0 +1,36 @@
+{
+  "name": "vector-memory-pg",
+  "version": "1.0.0",
+  "description": "Semantic memory for AI agents using PostgreSQL + pgvector + OpenAI embeddings. MCP server included.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Procesa / Vamyal",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "vector-search",
+    "pgvector",
+    "postgresql",
+    "mcp",
+    "ai-agent",
+    "semantic-memory",
+    "openai-embeddings",
+    "hnsw",
+    "rag"
+  ],
+  "scripts": {
+    "setup": "node src/setup-db.js",
+    "ingest": "node src/ingest.js",
+    "ingest:one": "node src/ingest-one.js",
+    "server": "node src/server.js",
+    "query": "node src/query.js",
+    "mcp": "node src/mcp-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.28.0",
+    "dotenv": "^16.4.0",
+    "pg": "^8.13.0",
+    "zod": "^3.24.0"
+  }
+}
